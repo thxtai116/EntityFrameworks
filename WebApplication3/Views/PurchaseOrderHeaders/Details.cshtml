@@ -1,0 +1,122 @@
+﻿@model WebApplication3.PurchaseOrderHeader
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PurchaseOrderHeader</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RevisionNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RevisionNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SubTotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SubTotal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TaxAmt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaxAmt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Freight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Freight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalDue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalDue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isDeleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isDeleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Employee.NationalIDNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employee.NationalIDNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipMethod.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipMethod.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vendor.AccountNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vendor.AccountNumber)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PurchaseOrderID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

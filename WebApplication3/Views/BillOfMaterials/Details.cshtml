@@ -1,0 +1,90 @@
+﻿@model WebApplication3.BillOfMaterial
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BillOfMaterial</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StartDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnitMeasureCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnitMeasureCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BOMLevel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BOMLevel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PerAssemblyQty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PerAssemblyQty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isDeleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isDeleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Product.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Product1.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product1.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BillOfMaterialsID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

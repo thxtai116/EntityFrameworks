@@ -1,0 +1,65 @@
+﻿@model WebApplication3.PersonCreditCard
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>PersonCreditCard</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isDeleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isDeleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Person.PersonType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Person.PersonType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreditCard.CardType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreditCard.CardType)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+    @if (ViewBag.Message != null)
+    {
+        <script type="text/javascript">
+            window.onload = function () {
+                alert("@ViewBag.Message");
+            };
+        </script>
+    }
+</div>

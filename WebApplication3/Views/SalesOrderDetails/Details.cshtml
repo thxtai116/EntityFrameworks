@@ -1,0 +1,98 @@
+﻿@model WebApplication3.SalesOrderDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SalesOrderDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CarrierTrackingNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarrierTrackingNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderQty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderQty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnitPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnitPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnitPriceDiscount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnitPriceDiscount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LineTotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LineTotal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.rowguid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.rowguid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isDeleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isDeleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SalesOrderHeader.SalesOrderNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SalesOrderHeader.SalesOrderNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SpecialOfferProduct.SpecialOfferID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SpecialOfferProduct.SpecialOfferID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

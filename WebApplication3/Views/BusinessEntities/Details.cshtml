@@ -1,0 +1,61 @@
+﻿@model WebApplication3.BusinessEntity
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BusinessEntity</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Person.Employee.NationalIDNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Person.Employee.NationalIDNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Store.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Store.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Person.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Person.FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Person.MiddleName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Person.MiddleName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Person.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Person.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.isDeleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isDeleted)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BusinessEntityID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

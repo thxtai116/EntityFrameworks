@@ -1,0 +1,50 @@
+﻿@model WebApplication3.PersonCreditCard
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PersonCreditCard</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isDeleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isDeleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Person.PersonType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Person.PersonType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreditCard.CardType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreditCard.CardType)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
